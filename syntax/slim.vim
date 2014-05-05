@@ -65,9 +65,6 @@ syn region slimInterpolation matchgroup=slimInterpolationDelimiter start="#{" en
 syn region slimInterpolation matchgroup=slimInterpolationDelimiter start="#{{" end="}}" contains=@hamlRubyTop containedin=javascriptStringS,javascriptStringD,slimWrappedAttrs
 syn match  slimInterpolationEscape "\\\@<!\%(\\\\\)*\\\%(\\\ze#{\|#\ze{\)"
 
-syn region slimRuby matchgroup=slimRubyOutputChar start="\s*[=]\==[']\=" contained contains=@slimRubyTop
-syn region slimRuby matchgroup=slimRubyChar       start="\s*-"           contained contains=@slimRubyTop
-
 syn match slimComment /^\(\s*\)[/].*\(\n\1\s.*\)*/ contains=slimTodo
 syn match slimText    /^\(\s*\)[`|'].*\(\n\1\s.*\)*/
 
